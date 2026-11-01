@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".MainActivity">
+
+  <TextView
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+       android:text="اختر اعداد من 1 الى 30"
+      android:layout_marginTop="50dp"
+      android:textSize="25dp"
+      android:textColor="#2196F3"
+      android:textAlignment="center"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:weightSum="3"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/txn1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="number"
+      android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/txn2"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/txn3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:layout_weight="1"/>
+
+
+  </LinearLayout>
+
+<ImageView
+    android:id="@+id/ivplay"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+  android:layout_gravity="center"
+    android:src="@drawable/outline_assistant_navigation_24"
+    />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:weightSum="3"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvn1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+      android:layout_weight="1"
+      android:text="0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:id="@+id/tvn2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:id="@+id/tvn3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textAlignment="center"
+
+        />
+  </LinearLayout>
+
+
+  <TextView
+      android:id="@+id/tvresult"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="25dp"
+      android:textColor="#2196F3"
+      android:textAlignment="center"/>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
